@@ -1,0 +1,20 @@
+<div class="mt-5 row mx-0">
+    <div class="col-md-3 col-sm-6 px-2" *ngFor="let hero of  heroList">
+        <div class="card   rounded mb-2" >
+            <div class="card-body p-2" [ngClass]="hero.power > 100 ?'high':  hero.power < 100 && hero.power > 50 ? 'medium' : 'low'"> 
+            <div class="card-image ">
+                <img [src]="urlImg +hero.image" alt="" class="w-100 rounded"  height="250px">
+            </div>
+            
+                <h5 class="text-white mb-0">{{hero.name}}</h5>
+                <h6 class="text-white">{{hero.power}}</h6>
+            </div>
+            <div class="card-footer p-2">
+                <button class="btn-sm btn-danger btn btn-block" (click)="deleteHero(hero._id)">Delete Hero</button>
+                <button class="btn-sm btn-success btn btn-block" [routerLink]="['/update-hero/',hero._id]">Update Hero</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>

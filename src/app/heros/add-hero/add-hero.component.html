@@ -1,0 +1,25 @@
+<div class="mt-4 mx-0 row w-100" [formGroup]="heroForm"
+(ngSubmit)="onSubmit()">
+<div class="col">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Hero name" formControlName="name">
+    </div>
+</div>
+<div class="col">
+    <div class="form-group">
+        <input type="number" class="form-control" placeholder="0"
+            formControlName="power">
+    </div>
+</div>
+<div class="col">
+    <div class="form-group">
+        <input type="file" (change)="selectImage($event)" class="form-control" placeholder="Hero picture url" formControlName="image">
+    </div>
+</div>
+<div class="col">
+    <div class="form-group">
+        <button type="submit" class="btn btn-sm btn-block p-2
+            text-white btn-purple"(click)="onSaveForm()">Create</button>
+    </div>
+</div>
+</div>

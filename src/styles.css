@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-ciel{
+    background-color: rgba(17, 207, 221, 0.938);
+    width: 100%;
+    
+}
+.btn-purple{
+    background-color: rgba(228, 41, 235, 0.671);
+    font-weight: bold;
+}
+.high{
+    background-color: rgba(13, 175, 99, 0.842);
+}
+.medium{
+    background-color: rgba(7, 100, 240, 0.466);
+}
+.low{
+    background-color: rgba(238, 131, 44, 0.562);
+}
+.not-found{font-size: 3.5rem;}
